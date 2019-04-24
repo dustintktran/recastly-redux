@@ -1,3 +1,5 @@
+import {connect} from 'react-redux'
+import {itemsFetchData} from '../actions/videoList.js'
 import React from 'react';
 import VideoListEntry from './VideoListEntry.js';
 
@@ -20,3 +22,18 @@ VideoList.propTypes = {
 };
 
 export default VideoList;
+{/* <div className="video-list">
+    {
+      videos.map(video => (
+        <VideoListEntry
+          key={video.etag}
+          video={video}
+          handleVideoListEntryTitleClick={handleVideoListEntryTitleClick}
+        />
+      ))
+    }
+  </div>
+);
+
+VideoList.propTypes = {
+  videos: React.PropTypes.array.isRequired */}
